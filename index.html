@@ -30,18 +30,40 @@
   <body>
     <header class="primary-header">
       <div class="container">
-        <a href="#"><img src="images/logo.svg" alt="Manage" /></a>
-        <nav class="primary-navigation">
-          <ul role="list" class="nav-list">
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Product</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Community</a></li>
-          </ul>
-        </nav>
-        <div>
-          <button class="btn">Get Started</button>
+        <div class="nav-wrappe">
+          <a href="#"><img src="images/logo.svg" alt="Manage" /></a>
+          <button
+            class="mobile-nav-toggle"
+            aria-controls="primary-navigation"
+            aria-expanded="false"
+          >
+            <img
+              class="icon-hamburger"
+              src="images/icon-hamburger.svg"
+              alt=""
+              aria-hidden="true"
+            />
+            <img
+              class="icon-close"
+              src="images/icon-close.svg"
+              alt=""
+              aria-hidden="true"
+            />
+            <span class="visually-hidden">Menu</span>
+          </button>
+
+          <nav class="primary-navigation" id="primary-navigation">
+            <ul role="list" class="nav-list">
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Product</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Community</a></li>
+            </ul>
+          </nav>
+          <button class="btn | display-sm-none display-md-inline-flex">
+            Get Started
+          </button>
         </div>
       </div>
     </header>
@@ -49,7 +71,7 @@
       <section class="padding-block-900">
         <div class="container">
           <div class="even-columns">
-            <div>
+            <div class="flow">
               <h1 class="fs-peimary-heading fw-bold">
                 Bring everyone together to build better products.
               </h1>
@@ -68,7 +90,7 @@
       <section class="padding-block-900">
         <div class="container">
           <div class="even-columns">
-            <div>
+            <div class="flow">
               <h2 class="fs-secondary-heading fw-bold">
                 What’s different about Manage?
               </h2>
@@ -79,33 +101,42 @@
               </p>
             </div>
             <div>
-              <ul role="list" class="numbered-items">
-                <li>
-                  <h3 class="fs-600 fw-bold">01 Track company-wide progress</h3>
-                  <p>
-                    See how your day-to-day tasks fit into the wider vision. Go
-                    from tracking progress at the milestone level all the way
-                    done to the smallest of details. Never lose sight of the
-                    bigger picture again.
-                  </p>
+              <ul role="list" class="numbered-items | flow">
+                <li class="flow">
+                  <div class="flow" style="--flow-space: 1em">
+                    <h3 class="fs-600 fw-bold">
+                      01 Track company-wide progress
+                    </h3>
+                    <p data-width="wide">
+                      See how your day-to-day tasks fit into the wider vision.
+                      Go from tracking progress at the milestone level all the
+                      way done to the smallest of details. Never lose sight of
+                      the bigger picture again.
+                    </p>
+                  </div>
                 </li>
-                <li>
-                  <h3 class="fs-600 fw-bold">02 Advanced built-in reports</h3>
-                  <p>
-                    Set internal delivery estimates and track progress toward
-                    company goals. Our customisable dashboard helps you build
-                    out the reports you need to keep key stakeholders informed.
-                  </p>
+                <li class="flow">
+                  <div class="flow" style="--flow-space: 1em">
+                    <h3 class="fs-600 fw-bold">02 Advanced built-in reports</h3>
+                    <p data-width="wide">
+                      Set internal delivery estimates and track progress toward
+                      company goals. Our customisable dashboard helps you build
+                      out the reports you need to keep key stakeholders
+                      informed.
+                    </p>
+                  </div>
                 </li>
-                <li>
-                  <h3 class="fs-600 fw-bold">
-                    03 Everything you need in one place
-                  </h3>
-                  <p>
-                    Stop jumping from one service to another to communicate,
-                    store files, track tasks and share documents. Manage offers
-                    an all-in-one team productivity solution.
-                  </p>
+                <li class="flow">
+                  <div class="flow" style="--flow-space: 1em">
+                    <h3 class="fs-600 fw-bold">
+                      03 Everything you need in one place
+                    </h3>
+                    <p data-width="wide">
+                      Stop jumping from one service to another to communicate,
+                      store files, track tasks and share documents. Manage
+                      offers an all-in-one team productivity solution.
+                    </p>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -120,13 +151,13 @@
 
       <section class="cta | bg-accent-400 text-accent-100 padding-block-700">
         <div class="container">
-          <div class="even-columns">
+          <div class="even-columns virtical-align-center">
             <div>
               <h2 class="fs-secondary-heading fw-bold">
                 Simplify how your team works today.
               </h2>
             </div>
-            <div>
+            <div class="justify-self-end">
               <button class="btn" data-type="inverted">Get Started</button>
             </div>
           </div>
@@ -176,11 +207,13 @@
     stop recommending them to everyone I talk to!” Shanai Gough “Their software
     allows us to track, manage and collaborate on our projects from anywhere. It
     keeps the whole team in-sync without being intrusive.” Community Privacy
-    Policy Updates in your inbox… Go 
+    Policy Updates in your inbox… Go
 
     <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
+
+    <script src="main.js"></script>
   </body>
 </html>
