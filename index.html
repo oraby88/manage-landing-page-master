@@ -18,6 +18,10 @@
       href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bitter:ital,wght@0,100..900;1,100..900&family=Cabin:ital,wght@0,400..700;1,400..700&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mukta:wght@200;300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.css"
+    />
 
     <title>Frontend Mentor | Manage landing page</title>
 
@@ -90,7 +94,10 @@
       <section class="padding-block-900">
         <div class="container">
           <div class="even-columns">
-            <div class="flow">
+            <div
+              class="flow text-center-sm-only margin-bottom-700"
+              style="--flow-space: 1.5rem"
+            >
               <h2 class="fs-secondary-heading fw-bold">
                 What’s different about Manage?
               </h2>
@@ -104,10 +111,10 @@
               <ul role="list" class="numbered-items | flow">
                 <li class="flow">
                   <div class="flow" style="--flow-space: 1em">
-                    <h3 class="fs-600 fw-bold">
-                      01 Track company-wide progress
+                    <h3 class="numbered-items__title | fs-600 fw-bold">
+                      Track company-wide progress
                     </h3>
-                    <p data-width="wide">
+                    <p class="numbered-items__body" data-width="wide">
                       See how your day-to-day tasks fit into the wider vision.
                       Go from tracking progress at the milestone level all the
                       way done to the smallest of details. Never lose sight of
@@ -117,8 +124,10 @@
                 </li>
                 <li class="flow">
                   <div class="flow" style="--flow-space: 1em">
-                    <h3 class="fs-600 fw-bold">02 Advanced built-in reports</h3>
-                    <p data-width="wide">
+                    <h3 class="numbered-items__title | fs-600 fw-bold">
+                      Advanced built-in reports
+                    </h3>
+                    <p class="numbered-items__body" data-width="wide">
                       Set internal delivery estimates and track progress toward
                       company goals. Our customisable dashboard helps you build
                       out the reports you need to keep key stakeholders
@@ -128,10 +137,10 @@
                 </li>
                 <li class="flow">
                   <div class="flow" style="--flow-space: 1em">
-                    <h3 class="fs-600 fw-bold">
-                      03 Everything you need in one place
+                    <h3 class="numbered-items__title | fs-600 fw-bold">
+                      Everything you need in one place
                     </h3>
-                    <p data-width="wide">
+                    <p class="numbered-items__body" data-width="wide">
                       Stop jumping from one service to another to communicate,
                       store files, track tasks and share documents. Manage
                       offers an all-in-one team productivity solution.
@@ -143,9 +152,55 @@
           </div>
         </div>
       </section>
-      <section class="carousel padding-block-700">
+      <section class="carousel padding-block-700 text-center">
         <h2 class="fs-secondary-heading fw-bold">What they’ve said</h2>
         <!-- carousels here -->
+        <ul class="slider">
+          <li>
+            <img src="images/avatar-anisha.png" alt="" />
+            <div class="slider-content | flow" style="--flow-space:1rem">
+              <h3>Anisha Li</h3>
+              <p>
+                “Manage has supercharged our team’s workflow. The ability to
+                maintain visibility on larger milestones at all times keeps
+                everyone motivated.”
+              </p>
+            </div>
+          </li>
+          <li>
+            <img src="images/avatar-ali.png" alt="" />
+            <div class="slider-content | flow" style="--flow-space:1rem">
+              <h3>Ali Bravo</h3>
+              <p>
+                “We have been able to cancel so many other subscriptions since
+                using Manage. There is no more cross-channel confusion and
+                everyone is much more focused.”
+              </p>
+            </div>
+          </li>
+          <li>
+            <img src="images/avatar-richard.png" alt="" />
+            <div class="slider-content | flow" style="--flow-space:1rem">
+              <h3>Richard Watts</h3>
+              <p>
+                “Manage allows us to provide structure and process. It keeps us
+                organized and focused. I can’t stop recommending them to
+                everyone I talk to!”
+              </p>
+            </div>
+          </li>
+          <li>
+            <img src="images/avatar-shanai.png" alt="" />
+            <div class="slider-content | flow" style="--flow-space:1rem">
+              <h3>Shanai Gough</h3>
+              <p>
+                “Their software allows us to track, manage and collaborate on
+                our projects from anywhere. It keeps the whole team in-sync
+                without being intrusive.”
+              </p>
+            </div>
+          </li>
+        </ul>
         <button class="btn">Get Started</button>
       </section>
 
@@ -166,87 +221,98 @@
         </div>
       </section>
     </main>
-    <footer class="primary-footer | bg-nutural-900 text-nutural-100 padding-block-900 ">
+    <footer
+      class="primary-footer | bg-nutural-900 text-nutural-100 padding-block-900"
+    >
       <div class="container">
-        <div class="primary-footer-wrapper | even-columns ">
-          <div>
+        <div class="primary-footer-wrapper | even-columns">
+          <div class="primary-footer-logo-social">
             <a href="#"><img src="images/logo.svg" alt="Manage" /></a>
             <ul class="social-list" role="list" aria-label="Social links">
               <li>
                 <a aria-label="facebook" href="#">
                   <svg class="social-icon">
-                    <use xlink:href="/images/social-icons.svg#icon-facebook"></use>
+                    <use
+                      xlink:href="/images/social-icons.svg#icon-facebook"
+                    ></use>
                   </svg>
                 </a>
               </li>
               <li>
                 <a aria-label="youtube" href="#">
                   <svg class="social-icon">
-                    <use xlink:href="/images/social-icons.svg#icon-youtube"></use>
+                    <use
+                      xlink:href="/images/social-icons.svg#icon-youtube"
+                    ></use>
                   </svg>
                 </a>
               </li>
               <li>
                 <a aria-label="twitter" href="#">
                   <svg class="social-icon">
-                    <use xlink:href="/images/social-icons.svg#icon-twitter"></use>
+                    <use
+                      xlink:href="/images/social-icons.svg#icon-twitter"
+                    ></use>
                   </svg>
                 </a>
               </li>
               <li>
                 <a aria-label="pinterest" href="#">
                   <svg class="social-icon">
-                    <use xlink:href="/images/social-icons.svg#icon-pinterest"></use>
+                    <use
+                      xlink:href="/images/social-icons.svg#icon-pinterest"
+                    ></use>
                   </svg>
                 </a>
               </li>
               <li>
                 <a aria-label="instagram" href="#">
                   <svg class="social-icon">
-                    <use xlink:href="/images/social-icons.svg#icon-instagram"></use>
+                    <use
+                      xlink:href="/images/social-icons.svg#icon-instagram"
+                    ></use>
                   </svg>
                 </a>
               </li>
             </ul>
           </div>
-          <div>
+          <div class="primary-footer-nav">
             <nav class="footer-nav" aria-label="Footer">
-              <ul role="list">
+              <ul
+                class="flow"
+                style="--flow-space: 1em"
+                aria-label="Footer"
+                role="list"
+              >
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Pricing</a></li>
                 <li><a href="#">Products</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Careers</a></li>
+                <li><a href="#">Community</a></li>
                 <li><a href="#">privacy policy</a></li>
               </ul>
             </nav>
           </div>
-          <div>
+          <div class="primary-footer-form">
             <form action="">
               <input type="email" placeholder="Update in your inbox.." />
-              <button class="btn">Go</button>
-              <p>Copyright 2020. All Rights Reserved</p>
+              <button class="btn" data-shadow="none">Go</button>
             </form>
+            <p>Copyright 2020. All Rights Reserved</p>
           </div>
         </div>
       </div>
     </footer>
-    Anisha Li “Manage has supercharged our team’s workflow. The ability to
-    maintain visibility on larger milestones at all times keeps everyone
-    motivated.” Ali Bravo “We have been able to cancel so many other
-    subscriptions since using Manage. There is no more cross-channel confusion
-    and everyone is much more focused.” Richard Watts “Manage allows us to
-    provide structure and process. It keeps us organized and focused. I can’t
-    stop recommending them to everyone I talk to!” Shanai Gough “Their software
-    allows us to track, manage and collaborate on our projects from anywhere. It
-    keeps the whole team in-sync without being intrusive.” Community Privacy
-    Policy Updates in your inbox… Go
+    <!-- <p>
+       Community Privacy
+    Policy Updates in your inbox… Go</p> -->
 
     <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
-
+    <script src="https://unpkg.com/a11y-slider@latest/dist/a11y-slider.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
