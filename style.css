@@ -449,6 +449,11 @@ p[data-width="wide"] {
   }
 }
 
+.icon{
+  width: 200px;
+}
+
+
 /* cta */
 .cta {
   position: relative;
