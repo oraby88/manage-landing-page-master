@@ -511,12 +511,7 @@ p[data-width="wide"] {
     "copyright";
 }
 
-.primary-footer-logo-social {
-  display: flex;
-  flex-direction: column-reverse;
-  gap: var(--size-700);
-  align-items: center;
-}
+
 
 .primary-footer-logo {
   grid-area: logo;
@@ -526,6 +521,12 @@ p[data-width="wide"] {
 .primary-footer-social {
   grid-area: social;
 }
+@media (max-width: 50em){
+  .scialContainer{
+    order: -1;
+  }
+}
+
 
 .primary-footer-copyright {
   grid-area: copyright;
@@ -540,7 +541,7 @@ p[data-width="wide"] {
 .primary-footer-form {
   grid-area: form;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   gap: var(--size-200);
 }
 
